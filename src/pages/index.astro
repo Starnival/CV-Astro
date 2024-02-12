@@ -1,20 +1,9 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle: string = "Pagina de Inicio"
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/">Index</a>
-		<a href="/about/">Sobre Mi</a>
-		<a href="/blog/">Blog</a>
-
-		<h1>{pageTitle}</h1>
-	</body>
-</html>
+<BaseLayout {pageTitle}>
+	<h2>Mi impresionante subtitulo del blog</h2>
+</BaseLayout>

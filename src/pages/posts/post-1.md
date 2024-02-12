@@ -1,4 +1,6 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
+
 titulo: 'Mi primera publicacion en el blog'
 fechaPublicacion: 2024-02-09
 descripcion: 'Esta es la primera publicacion de mi nuevo blog Astro.'
@@ -9,12 +11,7 @@ imagen:
 tags: ["astro", "bloguear", "aprender en publico"]
 ---
 
-
-# Mi primera publicacion en el Blog
-
-publicado el: 2024-02-09
-
-¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de Astro! Aqui, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
+¡Bienvenido a mi _nuevo blog_ sobre el aprendizaje de **Astro**! Aqui, voy a compartir mi viaje de aprendizaje a medida que construyo un nuevo sitio web.
 
 ## Lo que he conseguido
 

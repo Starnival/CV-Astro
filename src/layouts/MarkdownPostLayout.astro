@@ -1,0 +1,37 @@
+---
+import BaseLayout from './BaseLayout.astro'
+
+interface Props {
+    frontmatter : any
+}
+
+const {frontmatter}  = Astro.props;
+const pageTitle : string = frontmatter.titulo
+---
+
+<style>
+    img {
+        width: 800px;
+        margin: 2rem 0;
+    }
+    
+    .autor {
+        text-align: end;
+        font-style: italic;
+    }
+</style>
+
+
+<BaseLayout {pageTitle}>
+    <p>Publicado el: <b>{frontmatter.fechaPublicacion.slice(0, 10)}</b></p>
+
+    <picture>
+        <img src={frontmatter.imagen.url} alt={frontmatter.imagen.alt}>
+    </picture>
+
+    <slot />
+
+    <p class="autor">Escrito por <b>{frontmatter.autor}</b></p>
+</BaseLayout>
+
+
