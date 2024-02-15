@@ -9,6 +9,7 @@ interface Props {
 const { pageTitle } = Astro.props
 ---
 
+
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
@@ -16,11 +17,19 @@ const { pageTitle } = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+
+		<style>
+			.titulo {
+				text-transform: uppercase;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 
-		<h1>{pageTitle}</h1>
+		<h1 class="titulo">
+			{pageTitle}
+		</h1>
 
         <slot />
 

@@ -23,7 +23,7 @@ const pageTitle: string = "Mi blog de Astro"
 	<p>Aqui es donde publicaré sobre mi viaje de aprendizaje Astro</p>
 
 	<ul>
-		{allPosts.map((post) => <BlogPost url={post.url} titulo={post.frontmatter.titulo} />)}
+		{allPosts.map((post) => <BlogPost url={post.url} titulo={post.frontmatter.title} />)}
 	</ul>	
 </BaseLayout>
 
